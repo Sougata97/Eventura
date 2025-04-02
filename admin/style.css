@@ -1,0 +1,144 @@
+body {
+     font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url(../assets/images/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button, input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #f4f4f4;
+}
+label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#event_date {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#event_date:focus {
+    border-color: #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+/* Book Now Button Styling */
+.book-now-btn {
+    display: inline-block;
+    background-color: #28a745; /* Green background for action */
+    color: white; /* White text */
+    padding: 12px 25px; /* Add padding for size */
+    font-size: 18px; /* Set font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for Book Now button */
+.book-now-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly bigger shadow */
+}
+
+/* Active state when button is clicked */
+.book-now-btn:active {
+    background-color: #1e7e34; /* Even darker green */
+    transform: translateY(0); /* Remove the upward effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow when clicked */
+}
+
+/* Add a slight delay before the hover effect is triggered */
+.book-now-btn:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.4); /* Add a glowing border for focus */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .book-now-btn {
+        padding: 10px 20px; /* Slightly smaller padding on mobile */
+        font-size: 16px; /* Adjust font size */
+    }
+}
